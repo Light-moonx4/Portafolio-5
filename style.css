@@ -1,32 +1,147 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Fundamental para que no se peguen */
 }
 
-body{
-    overflow-x: hidden;
-}
-article{
-    padding: 1rem;
+body {
+    background-color: skyblue;
 }
 
-section.fondo{
-    background-image: url(img/fondo.png);
-   
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    margin-bottom: 2rem;
+/* Barra de navegación ajustada */
+.barra {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
-footer{
-    position: absolute;
+
+.barra h1 {
+    color: skyblue;
+    display: flex;
+    align-items: center;
+}
+
+.barra ul {
+    display: flex;
+    list-style: none;
+}
+
+.barra a {
+    color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.barra a:hover {
+    background-color: blue;
+    color: black;
+}
+
+/* Contenedor: Posiciona todo hacia abajo y con espacio */
+.container {
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column; /* Alineación vertical */
+    align-items: center;    /* Centra los bloques */
+    gap: 20px;              /* Espacio entre bloques */
+    padding: 20px 0;
+}
+
+/* Tus tamaños originales mantenidos */
+.personal {
+    height: 300px;
+    width: 250px;
+    background-color: black;
+    border-radius: 10px;
+    color: skyblue;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 35px;
+}
+
+.descripcion {
+    height: 300px;
+    width: 600px;
+    background-color: black;
+    border-radius: 10px;
+    color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    float: left;
+    margin-right: 35px;
+}
+
+.lenguajes {
+    height: 300px;
+    width: 900px; /* Tamaño respetado */
+    background-color: black;
+    border-radius: 10px;
+    color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.repositorio {
+    height: 300px;
+    width: 250px;
+    background-color: black;
+    border-radius: 10px;
+    color: skyblue;
+    display: flex;
+    flex-direction: column; 
+    float: left;
+    margin-right: 35px;
+}
+
+/* Imágenes internas */
+.personal img{
+    border-radius: 50%;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px auto 10px auto;
+}
+
+.repositorio img {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.lenguajes img {
+    height: 150px;
+    width: 150px;
+    margin-left: 30px;
+    object-fit: cover;
+    filter: drop-shadow(1.5px 1.5px 1.5px white);
+    
+}
+
+.personal h2, .personal p, .repositorio h2 {
     text-align: center;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, 70%);
-    height: 30vh;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 2.0rem;
+}
+.proyectos-git{
+    height: 300px;
+    width: 600px; /* Tamaño respetado */
+    background-color: black;
+    border-radius: 10px;
+    color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
 }
