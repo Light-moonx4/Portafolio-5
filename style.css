@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+article{
+    padding: 1rem;
+}
+
+section.fondo{
+    background-image: url(img/fondo.png);
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-bottom: 2rem;
+}
+footer{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    height: 30vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.0rem;
+}
